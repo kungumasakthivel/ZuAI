@@ -12,7 +12,7 @@ route.get('/posts', (req, res) => {
                 status: 0
             });
         }
-        res.send(rows);
+        res.json({"data": rows});
     });
 })
 
@@ -32,7 +32,7 @@ route.get('/posts/:id', (req, res) => {
                 status: 0
             })
         }
-        res.send(row);
+        res.send({"data": row});
     });
 });
 
